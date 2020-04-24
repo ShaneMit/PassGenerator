@@ -13,7 +13,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Add variables
+// Variables
 let lowerCase = 'abcdefghijklmnopqrstuvwxyz'
 let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 let numbers = '123456789'
@@ -25,6 +25,23 @@ let numbersC = confirm('Would like to use numbers?')
 let symbols = confirm(' Would you like to use special characters?')
 let passHolder = ''
 let newPassword = ''
+
+
+if (length < 8 || length > 128) {
+  alert('Password must be between 8 and 128 characters long');
+}
+if (low) {
+  passHolder += lowerCase;
+}
+if (up) {
+  passHolder += upperCase;
+}
+if (numbersC) {
+  passHolder += numbers;
+}
+if (symbols) {
+  passholder += special;
+}
 
 
 
