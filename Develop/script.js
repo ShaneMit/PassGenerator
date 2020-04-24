@@ -18,11 +18,13 @@ let lowerCase = 'abcdefghijklmnopqrstuvwxyz'
 let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 let numbers = '123456789'
 let special = '!$*&@'
-let passwordL = parseInt(prompt('What is your desired password length?'))
+let length = parseInt(prompt('What is your desired password length?'))
 let low = confirm('Would you like to use lower case letters?')
 let up = confirm('Would you like to use upper case letters?')
 let numbersC = confirm('Would like to use numbers?')
 let symbols = confirm(' Would you like to use special characters?')
+let passHolder = ''
+let newPassword = ''
 
 
 
